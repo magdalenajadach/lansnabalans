@@ -4,6 +4,8 @@ Fonts---> http://www.latofonts.com
 html, body {
   font-family: 'Lato', sans-serif;
   height: 100%;
+  color: #0f090b;
+  text-align: center;
 }
 
 /* Initial body */
@@ -16,11 +18,6 @@ body {
 
 .container {
   max-width: 970px;
-}
-
-h1 {
-  color: #0f090b;
-  text-align: center;
 }
 
 footer {
@@ -48,24 +45,46 @@ a:hover {
 
 .nav {
     text-align: center;
+    font-size: 18px;
 }
 
 img {
-  align-items: center
+  margin-left:auto;
+  margin-right:auto;
+  width: 650px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.social-media {
+  padding-bottom: 20px;
 }
 
-p, .social_media {
+.social-media a {
+  margin-left: 10px;
+}
+
+p, .social-media {
   text-align: center;
 }
 
+.pilates, .page-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .trening {
   text-align: center;
+  padding-top: 10px;
 }
 
+.trening img {
+  width: 100px;
+}
 
-
+address {
+  font-size: 16px;
+}
