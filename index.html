@@ -3,71 +3,28 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Trenerka Pilates w Krakowie">
+		<meta name="author" content="Daria Loferska-Nędza">
+		<meta name="keywords" content="pilates, trening, kraków">
+		
+		<title>Lans na balans</title>
+		<!-- bootstrap css & fonts -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles/main.css">
-		<title>Lans na balans</title>
 	</head>
-	<body>
-		<div class="container">
-			<h1>Lans na balans by Daria Loferska-Nędza</h1>
-			<hr>
-			<div class="row">
-				<div class="col-md-12">
-					<ul class="nav nav-tabs">
-						<li class="active">
-							<a href="#">Home</a>
-						</li>
-						<li class="blog">
-							<a href="http://lansnabalans.blog.pl">Blog</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			
-			<img src="images/main.png">
-			
-			<section>
-				<div class="row">
-					<div class="col-md-12">
-						<p class="pilates">Sport to moja pasja i sposób na życie. Interesują mnie różne dyscypliny, ale najbardziej fascynują mnie te, gdzie ćwiczenia fizyczne podporządkowane są treningowi mentalnemu. Najbliższy mi stał się Pilates, ze względu na to, że jest nie tylko zestawem ćwiczeń, ale pewną filozofią życia. <br/><br/>Moim celem jest ciągły rozwój, dlatego na zajęciach chętnie podejmuję nowe wyzwania. Kładę nacisk na poprawność wykonywania ćwiczeń, bo to jest najważniejszą rzeczą, by zrozumieć, na czym polega Pilates. Pragnę Was zarazić swoją pasją do tej metody i przekonać, że Pilates to kontrola zarówno nad własnym ciałem jak i umysłem. </p>
-					</div>
-				</div>
-			</section>
-			<hr>
-
-			<section class="trening">
-				<div class="row">
-					<div class="col-md-12">
-					<p><a href="http://www.onepilates.pl/">Prowadzę zajęcia w krakowskich klubach: One Pilates Studio</a> i <a href="http://gtxfitness.eu/">GTX Trainning Division</a></p>
-					<p>Zapraszam także do indywidualnych zajęć w ramach trenningu personalnego. </p>
-			</div>
-			</div>
-			</section>
-
-
-			<div class="social_media">
-			<h3>Kontakt:</h3>
-				<a href="http://lansnabalans.blog.pl"><i class="fa fa-2x fa-wordpress text-inverse"></i></a>
-				<a href="https://www.facebook.com/lansnabalans/"><i class="fa fa-2x fa-fw fa-facebook text-inverse"></i></a>
-				<a href="mailto:lansnabalans@gmail.com"><i class="fa fa-envelope fa-2x text-inverse"></i></a>
-			</div>
-			<hr>
-
-
-
-			</div> <!-- Last div to close main container -->
-			<div class="container">
-				<footer>
-					<i class="fa fa-copyright"></i>
-					<script type="text/javascript">
-					document.write(new Date().getFullYear());
-					</script><a href="http://magdalenajadach.github.io"> Powered by_ Magdalena Jadach</a>
-					<!-- <p>Icons <i class="fa fa-hand-o-right"></i><a href="http://fortawesome.github.io/Font-Awesome/"> Font Awesome</a></p> -->
-				</footer>
-			</div>
-			<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-			<script src="scripts/app.js"></script>
-		</body>
-	</html>
+	
+	<body ng-app="LansApp">
+		<div class="container" ng-controller="LansController">
+			<div header></div>
+			<div nav></div>
+			<div ng-view></div>
+			<div footer></div>
+		</div>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+</html>

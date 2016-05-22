@@ -4,8 +4,9 @@ Fonts---> http://www.latofonts.com
 html, body {
   font-family: 'Lato', sans-serif;
   height: 100%;
+  color: #0f090b;
+  text-align: center;
 }
-
 
 /* Initial body */
 body {
@@ -15,9 +16,8 @@ body {
 
 /* Initial menu */
 
-h1 {
-  color: #0f090b;
-  text-align: center;
+.container {
+  max-width: 970px;
 }
 
 footer {
@@ -33,35 +33,58 @@ a {
 a:hover {
     color: #cc181e;
     text-decoration: none;
+    font-weight: bold;
 }
 
-img {
-  max-width: 1140px;
-}
-
-.nav-tabs > li {
+.nav > li {
     float:none;
     display:inline-block;
     *display:inline; /* ie7 fix */
-     zoom:1; /* hasLayout ie7 trigger */
+    zoom:1; /* hasLayout ie7 trigger */
 }
 
-.nav-tabs {
-    text-align:center;
+.nav {
+    text-align: center;
+    font-size: 18px;
 }
 
-p, .social_media {
+img {
+  margin-left:auto;
+  margin-right:auto;
+  width: 650px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.social-media {
+  padding-bottom: 20px;
+}
+
+.social-media a {
+  margin-left: 10px;
+}
+
+p, .social-media {
   text-align: center;
 }
 
+.pilates, .page-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 .trening {
   text-align: center;
+  padding-top: 10px;
 }
 
+.trening img {
+  width: 100px;
+}
 
-
+address {
+  font-size: 16px;
+}
